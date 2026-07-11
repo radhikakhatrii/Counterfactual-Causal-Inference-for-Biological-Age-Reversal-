@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Raw data — NEVER commit. Public but large; download per README instructions.
+# ---------------------------------------------------------------------------
+# NHANES SAS transport files
+*.xpt
+*.XPT
+
+# NHANES oral microbiome 16S text files (large: some are 10s of MB)
+Microbiome/**/*.txt
+
+# Original NHANES data archive
+*.zip
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# OS / editor / scratch
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+run.log
+.ipynb_checkpoints/
+
+# NOTE: results/ (figures + CSVs) is intentionally NOT ignored — it is committed.
