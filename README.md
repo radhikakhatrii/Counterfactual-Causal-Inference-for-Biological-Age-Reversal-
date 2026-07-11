@@ -27,22 +27,23 @@ place them in the exact folders shown.
 
 ### 1. NHANES 2009–2010 (cycle F) — CDC
 
-Eight SAS transport (`.xpt`) files. Direct download links (CDC / NCHS):
+Eight SAS transport (`.xpt`) files, downloaded from the public CDC/NCHS NHANES
+2009–2010 (cycle F) release:
 
-| File | Component | Place in | Download |
-|------|-----------|----------|----------|
-| `DEMO_F.XPT`   | Demographics                | `NHANES/Demographics/` | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/DEMO_F.XPT |
-| `BMX_F.XPT`    | Body Measures (exam)        | `NHANES/Exam/`          | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/BMX_F.XPT |
-| `BIOPRO_F.XPT` | Standard Biochemistry (lab) | `NHANES/Lab/`           | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/BIOPRO_F.XPT |
-| `CBC_F.XPT`    | Complete Blood Count (lab)  | `NHANES/Lab/`           | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/CBC_F.XPT |
-| `CRP_F.XPT`    | C-Reactive Protein (lab)    | `NHANES/Lab/`           | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/CRP_F.XPT |
-| `DR1TOT_F.XPT` | Day-1 Total Nutrients (diet)| `NHANES/Dietary/`       | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/DR1TOT_F.XPT |
-| `SLQ_F.XPT`    | Sleep Disorders (quest.)    | `NHANES/Questionnaire/` | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/SLQ_F.XPT |
-| `PAQ_F.XPT`    | Physical Activity (quest.)  | `NHANES/Questionnaire/` | https://wwwn.cdc.gov/Nchs/Nhanes/2009-2010/PAQ_F.XPT |
+| File | Component | Place in |
+|------|-----------|----------|
+| `DEMO_F.XPT`   | Demographics                | `NHANES/Demographics/` |
+| `BMX_F.XPT`    | Body Measures (exam)        | `NHANES/Exam/`          |
+| `BIOPRO_F.XPT` | Standard Biochemistry (lab) | `NHANES/Lab/`           |
+| `CBC_F.XPT`    | Complete Blood Count (lab)  | `NHANES/Lab/`           |
+| `CRP_F.XPT`    | C-Reactive Protein (lab)    | `NHANES/Lab/`           |
+| `DR1TOT_F.XPT` | Day-1 Total Nutrients (diet)| `NHANES/Dietary/`       |
+| `SLQ_F.XPT`    | Sleep Disorders (quest.)    | `NHANES/Questionnaire/` |
+| `PAQ_F.XPT`    | Physical Activity (quest.)  | `NHANES/Questionnaire/` |
 
-Component landing pages (documentation / codebooks) live at
-`https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2009`.
-Other `.xpt` files that may be present locally (e.g. `BPX_F`, `PFQ_F`, `DR1IFF_F`,
+All eight are available from the CDC NHANES 2009–2010 data portal (search each
+file name; component documentation and codebooks are on the same pages). Other
+`.xpt` files that may be present locally (e.g. `BPX_F`, `PFQ_F`, `DR1IFF_F`,
 `DS2TOT_F`, `DSQTOT_F`) are **not required** by `prototype.py`.
 
 ### 2. NHANES oral microbiome 16S — dada2-processed
@@ -57,10 +58,10 @@ placed in `Microbiome/dada2rsv/`:
 | `dada2rsv-taxonomy-annotate.txt` | Genus ID → SILVA taxonomy lineage |
 
 > **Source:** these are the NHANES oral microbiome 16S (dada2 RSV) release files.
-> They are **not** distributed from CDC's main NHANES portal. Download them from
-> the same NHANES microbiome data release they were originally obtained from and
-> **fill in the exact URL here** before sharing the repo. (`dada2rb-*` reference-
-> based variants may also be present locally but are not used by the pipeline.)
+> They are **not** distributed from CDC's main NHANES portal — obtain them from
+> the NHANES microbiome data release they were originally sourced from.
+> (`dada2rb-*` reference-based variants may also be present locally but are not
+> used by the pipeline.)
 
 ## Setup & run
 
